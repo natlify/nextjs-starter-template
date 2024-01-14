@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LinkList
+
+> a minimalist link collection & sharing tool.
+
+![Landing Page](./public/screenshots/landing-page.png)
+
+## Overview
+
+Our goal is to create a versatile & straightforward links collator. Possible target use cases include :
+
+1. Usage in places where only one link can be used
+2. Share related research consisting of videos, articles, websites & publications
+3. Micro (or even nano) blogging. [ most of the blog in www are just lists that give Top N of X , n : number and x being a category ]
+4. Share content in a clean way without fluff or ads.
 
 ## Getting Started
 
-First, run the development server:
+Here's how to get this project up and running in local environment.
+
+### Prerequisites
+
+- nvm - Node Version Manager
+- Node.js (version 21.5.0)
+- Yarn 4 (preferred)
+- Modern Browsers like Chrome, FireFox
+
+### Installation
+
+Clone the repository and install dependencies.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/hckrs1/linklist.cc.git
+cd linklist.cc
+
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server by running the `dev` command
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+yarn dev
+```
 
-## Learn More
+Visit [http://localhost:3000/](http://localhost:3000)
 
-To learn more about Next.js, take a look at the following resources:
+## Built By
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="./public/screenshots/H.png" alt="Your Image" style="width: 30%; display: block;" />
+  <div style="width: 65%; height:80%; ">
+    <p>hckrs1 Venture Studios <br/>
+    www.hckrs.one<br/>Copyright &copy; 2024 | All Rights Reserved.</p>
+  </div>
+</div>
