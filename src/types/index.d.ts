@@ -4,11 +4,11 @@ export type SiteConfig = {
     description: string
     keywords: Array<string>
     url: {
-      base: string
-      author: string
+        base: string
+        author: string
     }
     links: {
-      github: string
+        github: string
     }
     ogImage: string
-  }
+}
