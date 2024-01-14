@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 
 import { siteConfig } from "@/config/site"
+import { fontSans } from "@/lib/google-fonts"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -70,7 +71,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <body
                 className={cn(
                     "min-h-screen bg-background antialiased",
-                    inter.className
+                    fontSans.className
                 )}
             >
                 <ThemeProvider
