@@ -8,5 +8,8 @@
   "prettier.configPath": "prettier.config.js",
   "todo-tree.tree.showBadges": true,
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }

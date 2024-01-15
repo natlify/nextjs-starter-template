@@ -3,8 +3,13 @@ module.exports = {
   endOfLine: "lf",
   semi: false,
   singleQuote: false,
+  useTabs: false,
   tabWidth: 2,
+  printWidth: 90,
   trailingComma: "es5",
+  quoteProps: "as-needed",
+  bracketSameLine: false,
+  arrowParens: "avoid",
   importOrder: [
     "^(react/(.*)$)|^(react$)",
     "^(next/(.*)$)|^(next$)",
@@ -24,8 +29,7 @@ module.exports = {
     "^[./]",
   ],
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
-  plugins: [
-    "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss",
-  ],
+  plugins: ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  tailwindConfig: "tailwind.config.ts",
+  tailwindFunctions: ["clsx"],
 }

@@ -1,4 +1,0 @@
-{
-  "**/*.ts?(x)": ["prettier --write", "eslint"],
-  "./*.md": ["prettier --write"]
-}
