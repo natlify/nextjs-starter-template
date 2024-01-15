@@ -65,19 +65,11 @@ export const viewport: Viewport = {
   ],
 }
 
-export default function RootLayout({
-  children,
-  params: { locale },
-}: RootLayoutProps) {
+export default function RootLayout({ children, params: { locale } }: RootLayoutProps) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head />
-      <body
-        className={cn(
-          "min-h-screen bg-background antialiased",
-          fontSans.className
-        )}
-      >
+      <body className={cn("min-h-screen bg-background antialiased", fontSans.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
