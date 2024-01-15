@@ -4,6 +4,15 @@
 
 ![Landing Page](./public/screenshots/landing-page.png)
 
+## TODO
+
+- [ ] Merge the language changes to template branch
+- [ ] Change toggle mode to switch
+- [ ] Set up Google Analytics
+- [ ] Add wix import cost toggle extension
+- [ ] Checkout Zustand for state management
+- [ ] Use editor js for links management
+
 ## Overview
 
 Our goal is to create a versatile & straightforward links collator. Possible target use cases include :
