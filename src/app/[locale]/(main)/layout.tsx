@@ -1,10 +1,6 @@
 import { PropsWithChildren } from "react"
-import dynamic from "next/dynamic"
-import { cookies } from "next/headers"
-import { redirect } from "next/navigation"
 
 // import { createClient } from "@/lib/supabase/server"
-import FullScreenLoading from "@/components/full-screen-loading"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export default async function MainLayout({ children }: PropsWithChildren) {

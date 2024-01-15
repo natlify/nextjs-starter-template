@@ -11,7 +11,7 @@
     "format": "yarn prettier ./src --write",
     "format:check": "yarn prettier ./src --check",
     "lint-staged": "lint-staged",
-    "type-check": "yarn tsc --project tsconfig.json --pretty --noEmit | echo"
+    "type-check": "yarn tsc --project tsconfig.json --pretty --noEmit && echo"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.6",

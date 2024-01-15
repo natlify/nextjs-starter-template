@@ -6,7 +6,7 @@
 
 ## TODO
 
-- [ ] Merge the language changes to template branch
+- [x] Merge the language changes to template branch
 - [ ] Change toggle mode to switch
 - [ ] Set up Google Analytics
 - [ ] Add wix import cost toggle extension
