@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withNextIntl = require("next-intl/plugin")("./src/lib/i18n.ts")
+
 const nextConfig = {
   webpack(config) {
     // Configures webpack to handle SVG files with SVGR. SVGR optimizes and transforms SVG files
     // into React components. See https://react-svgr.com/docs/next/
 
     // Grab the existing rule that handles SVG imports
-    // @ts-ignore - rules is a private property that is not typed
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")
     )
@@ -35,4 +37,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)

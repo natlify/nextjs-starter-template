@@ -2,6 +2,7 @@ import "@/styles/globals.css"
 
 import type { Metadata, Viewport } from "next"
 
+import { Language } from "@/config/language"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/google-fonts"
 import { cn } from "@/lib/utils"
@@ -9,6 +10,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 interface RootLayoutProps {
   children: React.ReactNode
+  params: {
+    locale: Language
+  }
 }
 
 export const metadata: Metadata = {
@@ -61,9 +65,12 @@ export const viewport: Viewport = {
   ],
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children,
+  params: { locale },
+}: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head />
       <body
         className={cn(

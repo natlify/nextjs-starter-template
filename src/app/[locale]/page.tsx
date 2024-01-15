@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -7,6 +8,8 @@ import { Icons } from "@/components/icons"
 import { ModeToggle } from "@/components/mode-toggle"
 
 export default function Home() {
+  const t = useTranslations("Index")
+
   return (
     <main className="flex h-screen items-center justify-center">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
@@ -23,7 +26,7 @@ export default function Home() {
             target="_blank"
             className={cn(buttonVariants({ size: "default" }))}
           >
-            Get Started
+            {t("getStarted")}
           </Link>
           <ModeToggle />
         </div>
