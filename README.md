@@ -12,6 +12,7 @@
 - [ ] Add wix import cost toggle extension
 - [ ] Checkout Zustand for state management
 - [ ] Use editor js for links management
+- [ ] Add 404 and 500 pages
 
 ## Overview
 
